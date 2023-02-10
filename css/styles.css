@@ -1,0 +1,1213 @@
+@font-face {
+  font-family: "Magnolia_Script";
+  src: url("../webfonts/magnolia-script.woff2") format("woff2"), url("../webfonts/magnolia-script.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI";
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  border-top: 2px solid #F6F5E1;
+  max-width: 300px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: #F6F5E1;
+  background-image: url(../img/bg3.jpg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+h3 {
+  display: inline-block;
+  font-family: "Magnolia_Script";
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #F6F5E1;
+  background-color: #ED195A;
+  letter-spacing: 2px;
+  margin: 20px 0px 0px 0px;
+  padding-left: 4px;
+}
+
+.container {
+  margin: auto auto;
+}
+.container.normal {
+  max-width: 1200px;
+  padding: 0px 50px;
+}
+.container.long {
+  max-width: 1600px;
+}
+
+footer {
+  background-color: #F6F5E1;
+  color: #ED195A;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 100px 0px;
+  text-align: center;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer div a {
+  margin: 10px;
+  font-size: 1.8rem;
+  color: #ED195A;
+}
+footer div a:hover {
+  color: #fc5a8b;
+  transition: 0.2s;
+}
+footer.noise {
+  background: url("../img/bg_noise.jpg");
+}
+
+@media only screen and (max-width: 481px) {
+  .container.normal {
+    padding: 0px 20px;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 0.9rem;
+    padding: 0 0 100px 0;
+  }
+  footer div {
+    display: flex;
+    justify-content: center;
+  }
+  footer div a {
+    margin: 10px 12px;
+    font-size: 1.8rem;
+    color: #ED195A;
+  }
+  footer div a:hover {
+    color: #fc5a8b;
+    transition: 0.2s;
+  }
+}
+.menu-base {
+  padding: 0px 0px 100px 0px;
+  box-sizing: border-box;
+  background: url("../img/bg_noise.jpg");
+}
+.menu-base h2 {
+  font-family: "Magnolia_Script";
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ED195A;
+  letter-spacing: 0.2rem;
+  margin: auto 0;
+  padding: 0;
+}
+
+.menu-title-div {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  padding: 100px 0 120px 0;
+}
+.menu-title-div .menu-button {
+  padding: 0;
+  margin: auto 0;
+}
+.menu-title-div .menu-button a {
+  font-family: "Magnolia_Script";
+  color: #ED195A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.menu-title-div .menu-button a i {
+  transform: rotate(180deg);
+  margin-right: 20px;
+}
+.menu-title-div .menu-button a:hover {
+  text-decoration: underline;
+}
+
+.flex-box-left {
+  width: 35%;
+}
+
+.flex-box-right {
+  width: 35%;
+}
+
+.menu-donuts-content {
+  margin: 0 0 180px 0;
+}
+.menu-donuts-content .menu-donuts-prices {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-donuts-content .menu-donuts-prices div {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-donuts-content .menu-donuts-prices div :last-child {
+  margin-left: 40px;
+}
+.menu-donuts-content h3 {
+  font-weight: normal;
+  font-family: "Magnolia_Script";
+  font-size: 1.5rem;
+  color: #F6F5E1;
+  background-color: #ED195A;
+  letter-spacing: 2px;
+  margin: 0px 0px 10px 0px;
+}
+.menu-donuts-content p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ED195A;
+  margin: 5px 0 5px 0;
+}
+.menu-donuts-content i {
+  font-size: 1.1rem;
+  margin-left: 10px;
+}
+.menu-donuts-content div {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.menu-donuts-content .price {
+  text-align: end;
+  margin: 5px 0 5px 0;
+}
+.menu-donuts-content hr {
+  margin: 15px 0;
+  border-top: 2px solid #ED195A;
+  max-width: 100%;
+}
+.menu-donuts-content .menu-donuts-premium {
+  display: grid;
+  margin: 50px 0;
+  grid-template-columns: repeat(auto-fit, minmax(0, min(25%, max(200px, 25%))));
+  row-gap: 50px;
+}
+.menu-donuts-content .menu-donuts-premium div {
+  margin: 0 auto;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu-donuts-content .menu-donuts-premium span {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ED195A;
+}
+.menu-donuts-content .menu-donuts-normal {
+  display: grid;
+  margin: 100px 0;
+  grid-template-columns: repeat(auto-fit, minmax(0, min(20%, max(200px, 20%))));
+  row-gap: 50px;
+}
+.menu-donuts-content .menu-donuts-normal div {
+  margin: 0 auto;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu-donuts-content .menu-donuts-normal span {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ED195A;
+}
+
+.menu-base-content {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-base-content .menu-category-food {
+  margin: 0 0 80px 0;
+}
+.menu-base-content .menu-category-food .category-title {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-base-content .menu-category-food .category-title .title-combo {
+  color: #ED195A;
+  text-align: end;
+  font-size: 1.2rem;
+}
+.menu-base-content .menu-category-food .category-img {
+  margin: 30px 0 10px 0;
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.menu-base-content .menu-category-food h3 {
+  font-weight: normal;
+  font-family: "Magnolia_Script";
+  font-size: 1.5rem;
+  color: #F6F5E1;
+  background-color: #ED195A;
+  letter-spacing: 2px;
+  margin: 0px 0px 10px 0px;
+}
+.menu-base-content .menu-category-food p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ED195A;
+  margin: 5px 0 0 0;
+}
+.menu-base-content .menu-category-food p:last-child {
+  display: block;
+  color: #EB948D;
+  margin: 0 0 5px 0;
+  font-size: 0.8rem;
+}
+.menu-base-content .menu-category-food i {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+.menu-base-content .menu-category-food div {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.menu-base-content .menu-category-food .price {
+  text-align: end;
+  margin: 5px 0 0 0;
+}
+.menu-base-content .menu-category-food hr {
+  margin: 15px 0;
+  border-top: 2px solid #ED195A;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .flex-box-left {
+    width: 40%;
+  }
+  .flex-box-right {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .flex-box-left {
+    width: 45%;
+  }
+  .flex-box-right {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .menu-donuts-content .menu-donuts-normal {
+    grid-template-columns: repeat(auto-fit, minmax(0, min(25%, max(200px, 25%))));
+    row-gap: 100px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .menu-base h2 {
+    text-align: start;
+    margin: auto 0;
+    padding: 50px 0 0 0;
+  }
+  .menu-title-div {
+    display: block;
+    padding: 100px 0 150px 0;
+  }
+  .menu-title-div .menu-button {
+    padding: 0;
+    margin: auto 0;
+  }
+  .menu-title-div .menu-button a {
+    font-family: "Magnolia_Script";
+    color: #ED195A;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  .menu-title-div .menu-button a i {
+    transform: rotate(180deg);
+    margin-right: 20px;
+  }
+  .menu-title-div .menu-button a:hover {
+    text-decoration: underline;
+  }
+  .flex-box-left {
+    width: 100%;
+  }
+  .flex-box-right {
+    width: 100%;
+  }
+  .menu-donuts-content {
+    margin: 0 0 150px 0;
+  }
+  .menu-donuts-content .menu-donuts-prices {
+    display: block;
+  }
+  .menu-donuts-content .menu-donuts-premium {
+    margin: 50px 0;
+    grid-template-columns: repeat(auto-fit, minmax(0, min(50%, max(200px, 50%))));
+    row-gap: 100px;
+  }
+  .menu-donuts-content .menu-donuts-premium div {
+    width: 150px;
+    height: 150px;
+  }
+  .menu-donuts-content .menu-donuts-premium span {
+    bottom: -30px;
+    font-size: 1.2rem;
+  }
+  .menu-donuts-content .menu-donuts-normal {
+    margin: 100px 0;
+    grid-template-columns: repeat(auto-fit, minmax(0, min(50%, max(200px, 50%))));
+    row-gap: 80px;
+  }
+  .menu-donuts-content .menu-donuts-normal div {
+    width: 150px;
+    height: 150px;
+  }
+  .menu-donuts-content .menu-donuts-normal span {
+    bottom: -30px;
+    font-size: 1.2rem;
+  }
+  .menu-base-content {
+    display: block;
+  }
+}
+header {
+  margin: auto auto;
+}
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 50px 0px;
+  padding: 20px;
+}
+header img {
+  height: 150px;
+}
+header .socmed-link {
+  font-size: 1.4rem;
+}
+header a {
+  margin: auto 0px auto 30px;
+  font-weight: normal;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ED195A;
+}
+header a:hover {
+  color: #fc5a8b;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 1150px) {
+  header .socmed-link {
+    display: inline;
+    justify-content: space-around;
+    font-size: 1.4rem;
+  }
+  header a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 961px) {
+  header .header-content {
+    display: block;
+    text-align: center;
+    padding: 30px;
+  }
+  header img {
+    height: 200px;
+    margin: 0 0 20px 0;
+  }
+  header .socmed-link {
+    margin: auto 15px auto 15px;
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 641px) {
+  header .header-content {
+    display: block;
+    text-align: center;
+    padding: 30px;
+  }
+  header img {
+    height: 200px;
+    margin: 0 0 20px 0;
+  }
+  header .socmed-link {
+    margin: auto 15px auto 15px;
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 481px) {
+  header .header-content {
+    display: block;
+    text-align: center;
+    padding: 30px;
+  }
+  header img {
+    height: 180px;
+    margin: 0 0 20px 0;
+  }
+  header .socmed-link {
+    margin: auto 10px auto 10px;
+    font-size: 1.8rem;
+  }
+}
+.top-div {
+  background-color: #F6F5E1;
+  background-image: url(../img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0px 100px;
+  height: 1000px;
+}
+.top-div h1 {
+  font-family: "Magnolia_Script";
+  font-size: 6rem;
+  text-align: end;
+  color: #ED195A;
+  float: right;
+  line-height: 150%;
+}
+.top-div h1 span {
+  font-size: 11rem;
+}
+
+@media only screen and (max-width: 961px) {
+  .top-div {
+    background-position: 0% 100%;
+    background-size: 1000px;
+    padding: 0px 50px;
+    height: 1000px;
+  }
+  .top-div h1 {
+    font-size: 4rem;
+    line-height: 150%;
+    margin: 0;
+  }
+  .top-div h1 span {
+    font-size: 9rem;
+  }
+}
+@media only screen and (max-width: 641px) {
+  .top-div {
+    background-position: 0% 100%;
+    background-size: 1000px;
+    padding: 0px 50px;
+  }
+  .top-div h1 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 160%;
+    margin: 0 auto;
+    float: none;
+  }
+  .top-div h1 span {
+    font-size: 6.5rem;
+  }
+}
+@media only screen and (max-width: 481px) {
+  .top-div {
+    background-position: 0% 100%;
+    background-size: 1000px;
+    height: 950px;
+    padding: 0px 20px;
+  }
+  .top-div h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 160%;
+    margin: 0 auto;
+    float: none;
+  }
+  .top-div h1 span {
+    font-size: 4rem;
+  }
+}
+.about-div {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+  box-sizing: border-box;
+  padding: 0 0 100px 0;
+}
+.about-div h2 {
+  font-family: "Magnolia_Script";
+  text-align: center;
+  font-size: 2.5rem;
+  color: #F6F5E1;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding: 80px 0px;
+}
+.about-div p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #F6F5E1;
+  width: 50%;
+  padding: 0px 50px;
+}
+.about-div p span {
+  padding-left: 5px;
+  font-size: 1.8rem;
+  margin-right: 5px;
+  font-family: "Magnolia_Script";
+  background-color: #ED195A;
+  letter-spacing: 0.2rem;
+  color: #F6F5E1;
+}
+
+.about-div-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-div-top .about-img-top {
+  opacity: 0;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/about_top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-div-top .about-img-top.about-top-animate {
+  opacity: 1;
+  animation: rightabout 1s ease 0s 1 normal forwards;
+}
+
+.about-div-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-div-bottom .about-img-bottom {
+  opacity: 0;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/about_bottom.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-div-bottom .about-img-bottom.about-bottom-animate {
+  opacity: 1;
+  animation: leftabout 1s ease 0s 1 normal forwards;
+}
+
+@media only screen and (max-width: 961px) {
+  .about-div {
+    background-color: #EB948D;
+    height: auto;
+  }
+  .about-div p {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+  }
+  .about-div hr {
+    display: none;
+  }
+  .about-div-top {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 50px;
+    margin: 0 0 50px 0;
+  }
+  .about-div-top .about-img-top {
+    margin: 0 auto;
+  }
+  .about-div-bottom {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 50px;
+    margin: 50px 0 0 0;
+  }
+  .about-div-bottom .about-img-bottom {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 641px) {
+  .about-div p {
+    padding: 0;
+    width: 90%;
+  }
+  .about-div-top {
+    row-gap: 40px;
+  }
+  .about-div-top .about-img-top {
+    height: 250px;
+    width: 250px;
+  }
+  .about-div-bottom {
+    row-gap: 40px;
+  }
+  .about-div-bottom .about-img-bottom {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 481px) {
+  .about-div {
+    padding: 0 0 50px 0;
+  }
+  .about-div h2 {
+    font-size: 2.2rem;
+    padding: 50px 0px;
+  }
+  .about-div p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .about-div p span {
+    font-size: 1.5rem;
+  }
+  .about-div-top {
+    row-gap: 20px;
+    margin: 0 0 30px 0;
+  }
+  .about-div-top .about-img-top {
+    height: 220px;
+    width: 220px;
+  }
+  .about-div-bottom {
+    row-gap: 20px;
+    margin: 30px 0 0 0;
+  }
+  .about-div-bottom .about-img-bottom {
+    height: 220px;
+    width: 220px;
+  }
+}
+@keyframes rightabout {
+  0% {
+    opacity: 0;
+    transform: translateX(250px) rotate(200deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
+@keyframes leftabout {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px) rotate(-200deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
+.donuts-div {
+  background-color: #F6F5E1;
+  padding: 0px 0px 150px 0px;
+  box-sizing: border-box;
+}
+.donuts-div h2 {
+  font-family: "Magnolia_Script";
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ED195A;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding: 80px 0px 0px 0px;
+}
+.donuts-div p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ED195A;
+  padding: 0px 50px 60px 50px;
+}
+
+.donuts-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, min(50%, max(200px, 50%))));
+  row-gap: 100px;
+}
+.donuts-content div {
+  margin: 0 auto;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.donuts-content span {
+  text-align: center;
+  position: absolute;
+  transform: translateX(125px);
+  bottom: 0;
+  font-size: 2rem;
+  font-family: "Magnolia_Script";
+  background-color: #ED195A;
+  color: #F6F5E1;
+}
+.donuts-content .classic:hover {
+  animation: wobble 2s ease 0s 1 normal forwards;
+}
+.donuts-content .cocoreo:hover {
+  animation: shake 2s ease 0s 1 normal forwards;
+}
+.donuts-content .glazed:hover {
+  animation: jello 2s ease 0s 1 normal forwards;
+}
+.donuts-content .krunchy:hover {
+  animation: beat 2s ease 0s 1 normal forwards;
+}
+.donuts-content .krunchy span {
+  transform: translateX(115px);
+}
+
+@media only screen and (max-width: 961px) {
+  .donuts-content div {
+    width: 300px;
+    height: 300px;
+  }
+  .donuts-content span {
+    transform: translateX(100px);
+    font-size: 2rem;
+  }
+  .donuts-content .krunchy span {
+    transform: translateX(90px);
+  }
+}
+@media only screen and (max-width: 760px) {
+  .donuts-content div {
+    width: 250px;
+    height: 250px;
+  }
+  .donuts-content span {
+    transform: translateX(75px);
+    font-size: 2rem;
+  }
+  .donuts-content .krunchy span {
+    transform: translateX(65px);
+  }
+}
+@media only screen and (max-width: 650px) {
+  .donuts-content div {
+    width: 200px;
+    height: 200px;
+  }
+  .donuts-content span {
+    transform: translateX(55px) translateY(10px);
+    font-size: 1.8rem;
+  }
+  .donuts-content .krunchy span {
+    transform: translateX(45px);
+  }
+}
+@media only screen and (max-width: 550px) {
+  .donuts-content {
+    row-gap: 50px;
+  }
+  .donuts-content div {
+    width: 180px;
+    height: 180px;
+  }
+  .donuts-content span {
+    transform: translateX(50px);
+    font-size: 1.6rem;
+  }
+  .donuts-content .krunchy span {
+    transform: translateX(40px);
+  }
+}
+@media only screen and (max-width: 481px) {
+  .donuts-div {
+    padding: 0px 0px 80px 0px;
+  }
+  .donuts-div h2 {
+    font-size: 2.2rem;
+    padding: 50px 0px 0px 0px;
+  }
+  .donuts-div p {
+    font-size: 1.1rem;
+    padding: 0px 0px 50px 0px;
+  }
+  .donuts-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, min(50%, max(150px, 50%))));
+    row-gap: 40px;
+  }
+  .donuts-content div {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .donuts-content span {
+    transform: translateX(35px) translateY(10px);
+    font-size: 1.6rem;
+  }
+  .donuts-content .cocoreo span {
+    transform: translateX(32px) translateY(10px);
+  }
+  .donuts-content .krunchy span {
+    transform: translateX(28px) translateY(10px);
+  }
+}
+@keyframes wobble {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70% {
+    transform: translateX(-20px);
+  }
+  20%, 40%, 60% {
+    transform: translateX(20px);
+  }
+  80% {
+    transform: translateX(12px);
+  }
+  90% {
+    transform: translateX(-12px);
+  }
+}
+@keyframes jello {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes beat {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+  55% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  65% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  75% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+}
+.menu-div {
+  background-color: #EB948D;
+  padding: 0px 0px 0px 0px;
+}
+.menu-div h2 {
+  font-family: "Magnolia_Script";
+  text-align: center;
+  font-size: 2.5rem;
+  color: #F6F5E1;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding: 80px 0px 0px 0px;
+}
+.menu-div p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #F6F5E1;
+  padding: 0px 50px 60px 50px;
+}
+.menu-div a {
+  font-family: "Magnolia_Script";
+  color: #F6F5E1;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  float: right;
+}
+.menu-div a i {
+  margin-left: 20px;
+}
+.menu-div a:hover {
+  text-decoration: underline;
+}
+
+.menu-button {
+  display: block;
+  padding: 50px 30px 100px 0px;
+}
+
+.menu-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, min(100%, max(200px, 50%))));
+  row-gap: 50px;
+}
+.menu-content .food-div {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.menu-content .food-div img {
+  position: absolute;
+  top: -35px;
+  right: -50px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .menu-button {
+    padding: 50px 50px 100px 0px;
+  }
+  .menu-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, min(100%, max(200px, 100%))));
+    row-gap: 60px;
+  }
+}
+@media only screen and (max-width: 961px) {
+  .menu-button {
+    display: block;
+    padding: 50px 40px 100px 0px;
+  }
+}
+@media only screen and (max-width: 481px) {
+  .menu-div h2 {
+    font-size: 2.2rem;
+    padding: 50px 0px 0px 0px;
+  }
+  .menu-div p {
+    font-size: 1.1rem;
+    padding: 0px 0px 40px 0px;
+  }
+  .menu-div a {
+    font-size: 1.4rem;
+  }
+  .menu-div a i {
+    margin-left: 20px;
+  }
+  .menu-div a:hover {
+    text-decoration: underline;
+  }
+  .menu-button {
+    display: block;
+    padding: 30px 0 80px 0;
+  }
+  .menu-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, min(100%, max(200px, 100%))));
+    row-gap: 40px;
+  }
+  .menu-content .food-div {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .menu-content .food-div img {
+    position: absolute;
+    top: -25px;
+    right: -15px;
+    height: 120px;
+  }
+}
+.store-div {
+  background-color: #F6F5E1;
+  padding: 0px 0px 100px 0px;
+  box-sizing: border-box;
+}
+.store-div h2 {
+  font-family: "Magnolia_Script";
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ED195A;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding: 80px 0px;
+}
+
+.store-content {
+  display: flex;
+  justify-content: space-around;
+}
+.store-content .store-desc {
+  width: 40%;
+}
+.store-content img {
+  width: 400px;
+  border-radius: 5px;
+}
+.store-content p {
+  color: #ED195A;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.store-content .monfri {
+  color: #ED195A;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.store-content .monfri span {
+  margin-left: 40px;
+}
+.store-content .satsun {
+  color: #ED195A;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.store-content .satsun span {
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .store-content {
+    display: block;
+    text-align: center;
+  }
+  .store-content .store-desc {
+    width: 100%;
+    text-align: left;
+  }
+  .store-content .store-desc div {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .store-content img {
+    width: 400px;
+    padding: 0 0 50px 0;
+    border-radius: 5px;
+  }
+}
+@media only screen and (max-width: 481px) {
+  .store-div h2 {
+    font-size: 2.2rem;
+    padding: 50px 0;
+  }
+  .store-content .store-desc div {
+    width: 100%;
+  }
+  .store-content img {
+    width: 400px;
+    padding: 0 0 50px 0;
+    border-radius: 5px;
+  }
+  .store-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  .store-content .monfri {
+    font-size: 1rem;
+  }
+  .store-content .satsun {
+    font-size: 1rem;
+  }
+}
